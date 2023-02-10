@@ -14,7 +14,7 @@ module.exports = function toReadable (number) {
     } else if (number >= 100 && twoNumbers <= 19) {
       result = `${units[Number(numberArray[0])]} hundred ${units[twoNumbers]}`;
     } else {
-      result = `${units[Number(numberArray[0])]} hundred ${tens[Number(numberArray[1]) - 2]} ${units[Number(numberArray[2])]}`.replace(' zero','');
+      result = `${units[Number(numberArray[0])]} hundred ${decimal[Number(numberArray[1]) - 2]} ${units[Number(numberArray[2])]}`.replace(' zero','');
     };
     return result;
 }
